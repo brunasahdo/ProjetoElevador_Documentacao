@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\Inicializar1.png" />
+    <None Include="wwwroot\Images\Inicializar2.png" />
+  </ItemGroup>
+
+</Project>

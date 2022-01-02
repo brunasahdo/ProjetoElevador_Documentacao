@@ -1,0 +1,128 @@
+﻿
+
+@{
+    ViewData["Title"] = "Documentação - Projeto Elevador Console";
+}
+<p>&nbsp;</p>
+
+<p style="text-align:center"><span style="color:#2980b9"><span style="font-size:24px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Documenta&ccedil;&atilde;o&nbsp;Aplicativo Console Elevador</span></span></span></p>
+
+<p style="text-align:center"><span style="font-family:&quot;Trebuchet MS&quot;,Helvetica,sans-serif"><span style="font-size:16px">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Esta p&aacute;gina tem o objetivo de explicar o uso e funcionamento do aplicativo Console projetoElevador.&nbsp;O aplicativo foi feito como parte do projeto final para o curso online de forma&ccedil;&atilde;o MS-DEV do programa Samsung Ocean em Dezembro de 2021 e est&aacute; dispon&iacute;vel no&nbsp;</span></span><span style="font-size:16px"><a href="https://github.com/brunasahdo/ProjetoFinal.git" style="font-size: 16px; font-family: &quot;trebuchet ms&quot;, helvetica, sans-serif; text-align: justify;">github</a><span style="font-family:&quot;Trebuchet MS&quot;,Helvetica,sans-serif">.</span></span></p>
+
+<p style="text-align:center"><span style="font-size:16px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Aluna: Bruna Larissa de Souza Sahdo e Silva</span></span></p>
+
+<hr />
+<p style="text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">Este &eacute; um aplicativo que simula o controle do fluxo de pessoas e do movimento de um elevador cuja quantidade de andares e capacidade s&atilde;o informadas pelo usu&aacute;rio. Para isso, ao longo do programa o usu&aacute;rio deve dar inputs b&aacute;sicos que s&atilde;o comumente fornecidos a um elevador, como informar se algu&eacute;m chamou o elevador e em que andar (Bot&atilde;o de Chamada), informar quais andares foram selecionados no painel pelas pessoas que entraram, etc. O andar atual &eacute; mostrado no Console, assim como outras informa&ccedil;&otilde;es, e o elevador se movimenta de acordo com as chamadas, priorizando andares na dire&ccedil;&atilde;o em que est&aacute; indo (subindo ou descendo). Para come&ccedil;ar, vamos iniciar o programa:</span></span></p>
+
+<p style="margin-left:40px; text-align:justify">&nbsp;</p>
+<p style="margin-left:40px; text-align:justify"><em><span style="color:#8e44ad"><span style="font-size:20px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">&nbsp;1.Configurando o elevador&nbsp;</span></span></span></em></p>
+
+
+<p style="margin-left:40px; text-align:justify"><span style="font-size:16px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Assim que o programa for iniciado, ele perguntar&aacute; ao usu&aacute;rio a quantidade de andares que o pr&eacute;dio possui e a quantidade m&aacute;xima que o elevador suporta.&nbsp;</span></span><span style="font-size:16px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Esses valores </span></span><span style="font-size:16px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">precisam ser n&uacute;meros inteiros positivos. Caso contr&aacute;rio, o aplicativo informar&aacute; que os valores s&atilde;o inv&aacute;lidos e pedir&aacute; que o usu&aacute;rio insira outros valores.</span></span></p>
+
+<p style="margin-left:40px;text-align:justify"><img alt="" src="Images/Inicializar1.png" style="height:270px; width:703px" /></p>
+
+<p style="margin-left:40px"><span style="font-size:16px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Depois de pressionar enter, chegamos &agrave; tela principal do aplicativo, na qual podemos realizar algumas a&ccedil;&otilde;es:</span></span></p>
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="Images/Inicializar2.png" /></p>
+
+<p style="margin-left:40px"><span style="font-size:16px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Podemos ver que o elevador se encontra parado no t&eacute;rreo e que ele &eacute; inicializado vazio. Como informado no passo anterior, para que algu&eacute;m entre, essa pessoa precisa chamar o elevador at&eacute; o seu andar, mesmo que seja o t&eacute;rreo. Afinal, um elevador s&oacute; abre em algum andar quando ele &eacute; chamado, mesmo que esteja parado nele. Vamos ver o que acontece se algu&eacute;m chamar o elevador no quarto andar.</span></span></p>
+
+<p style="margin-left:40px; text-align:justify">&nbsp;</p>
+
+<p style="margin-left:40px"><em><span style="color:#8e44ad"><span style="font-size:20px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">&nbsp;2.Chamando o elevador </span></span></span></em></p>
+
+<p style="margin-left:40px"><span style="font-size:16px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">&nbsp;&nbsp;&nbsp;&nbsp; Vamos escolher a primeira op&ccedil;&atilde;o do menu para simular uma pessoa que apertou o bot&atilde;o de chamar o elevador no quarto andar. Quando digitamos 1 e clicamos em enter, o programa pergunta em que andar o elevador foi chamado. Basta responder um andar entre 0 e 15, neste caso, e uma mensagem de&nbsp;</span></span><span style="font-size:16px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">confirma&ccedil;&atilde;o aparecer&aacute; no Console.</span></span></p>
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Chamar1.png"/></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-size:16px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">Quando o usu&aacute;rio pressiona Enter, a tela principal &eacute; atualizada. Ao lado do andar, o status muda de &quot;Parado&quot; para &quot;Subindo&quot;. Al&eacute;m disso, o n&uacute;mero &quot;4&quot; aparece na lista de andares chamados e o menu fica dispon&iacute;vel novamente. </span></span></p>
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Chamar2.png"/></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-size:16px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">A partir da&iacute;, a menos que o usu&aacute;rio queira realizar alguma outra a&ccedil;&atilde;o, como simular outra pessoa chamando o elevador, ele deve apenas pressionar Enter para atualizar o status do elevador.&nbsp;</span></span><span style="font-family:&quot;Trebuchet MS&quot;,Helvetica,sans-serif; font-size:16px">Depois de cada &quot;Enter&quot;, o elevador se desloca 1 andar para chegar ao pr&oacute;ximo destino e o Menu retorna, para que haja a op&ccedil;&atilde;o de realizar uma a&ccedil;&atilde;o a qualquer momento (algu&eacute;m pode, por exemplo, chamar o elevador no andar 3 enquanto ele est&aacute; subindo para o andar 4. Tal como um elevador comum, ele reconhece que deve parar no andar 3 se ainda n&atilde;o tiver passado dele).</span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS, Helvetica, sans-serif"><span style="font-size:16px">&nbsp; &nbsp; &nbsp;Quando continuamos sem fazer outra a&ccedil;&atilde;o, o elevador sobre do t&eacute;rreo at&eacute; o andar 4.</span></span></p>
+
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Chamar3.png"/></p>
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Chamar4.png"/></p>
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Chamar5.png"/></p>
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Chamar6.png"/></p>
+
+
+<p style="margin-left:40px; text-align:justify">&nbsp;</p>
+
+<p style="margin-left:40px; text-align:justify"><em><span style="color:#8e44ad"><span style="font-size:20px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">3.Entrando</span></span></span></em></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS, Helvetica, sans-serif"><span style="font-size:16px">&nbsp; &nbsp; &nbsp;Chegando ao andar em que o elevador foi chamado, a tela principal n&atilde;o mostra o Menu, mas pergunta quantas pessoas desejam entrar. Lembrando que configuramos a capacidade para 4 pessoas, ent&atilde;o se a quantidade for maior que isso, o elevador n&atilde;o permitir&aacute; a entrada e perguntar&aacute; novamente a quantidade. Veja o exemplo abaixo:</span></span></p>
+
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Chamar7Entrar.png"/></p>
+
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">Colocamos duas pessoas no elevador e o aplicativo confirmou a atualiza&ccedil;&atilde;o da lota&ccedil;&atilde;o atual. O programa nos leva então ao Painel Interno do elevador, para que as pessoas que entraram possam selecionar os andares de destino.</span></span></p>
+
+<p style="margin-left:40px; text-align:justify">&nbsp;</p>
+
+<p style="margin-left:40px; text-align:justify"><em><span style="color:#8e44ad"><span style="font-size:20px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">4.Selecionando andares no painel</span></span></span></em></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">&nbsp; &nbsp; &nbsp;Depois de clicar em Enter, veremos uma tela nova: o Painel interno do elevador. As informa&ccedil;&otilde;es de quantidade de pessoas e andares chamados tamb&eacute;m aparece atualizada (o andar 4 n&atilde;o est&aacute; mais na lista porque o elevador j&aacute; fez sua parada):&nbsp;</span></span></p>
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Entrar1Painel.png"/></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">Esta p&aacute;gina serve para simular os bot&otilde;es que podem ser selecionados por pessoas dentro do elevador. Toda vez que algu&eacute;m entrar, o painel se abrir&aacute; em seguida. Ainda assim, a pessoa pode escolher n&atilde;o fazer op&ccedil;&atilde;o alguma clicando em Enter, seja porque o andar para o qual deseja ir j&aacute; est&aacute; selecionado ou ent&atilde;o porque deseja selecionar em outro momento. No exemplo acima, selecionamos o andar 12. Se o andar for v&aacute;lido, uma mensagem de confirma&ccedil;&atilde;o aparecer&aacute; em seguida.</span></span></p>
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Entrar2Painel.png"/></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">&nbsp; &nbsp; &nbsp;No painel, pode-se escolher um andar entre 0 e o &uacute;ltimo, neste caso 15. Tamb&eacute;m &eacute; poss&iacute;vel selecionar qualquer quantidade de bot&otilde;es, pois o programa continuar&aacute; perguntando se o usu&aacute;rio deseja selecionar outro andar at&eacute; que ele clique em Enter para sair do painel. O painel tamb&eacute;m pode ser acessado a qualquer momento pela opç&atilde;o 2 do menu.</span></span></p>
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">&nbsp; &nbsp; &nbsp;Ao sair do painel, voltamos &agrave; tela principal, ainda no mesmo andar e com as informa&ccedil;&otilde;es da quantidade de pessoas e andares chamados atualizadas. Na lista de andares chamados, tanto os andares selecionados no painel interno quanto os das pessoas que chamaram o elevador externamente aparecem, indicando todos os lugares em que o elevador vai parar. Nessa tela temos tamb&eacute;m o Menu novamente, porque alguma requisi&ccedil;&atilde;o pode ter sido feita (Ex: Se alguma das pessoas entrou no elevador por engano e deseja sair neste andar, basta escolher a op&ccedil;&atilde;o 3).</span></span></p>
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Entrar3.png"/></p>
+<p style="margin-left:40px; text-align:justify">&nbsp;</p>
+
+
+<p style="margin-left:40px; text-align:justify"><em><span style="color:#8e44ad"><span style="font-size:20px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">5.Saindo</span></span></span></em></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">&nbsp; &nbsp; &nbsp;Agora que um andar foi selecionado no painel, o elevador seguir&aacute; em dire&ccedil;&atilde;o a ele, subindo um andar a cada vez que o Enter for pressionado. Na din&acirc;mica normal de um elevador, as pessoas entram em um andar, escolhem o seu destino e saem quando o elevador chega l&aacute;. Ent&atilde;o, assim que o andar 12 for alcan&ccedil;ado, o aplicativo perguntar&aacute; quantos desejam sair:</span></span></p>
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Sair1.png"/></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">Em seguida, o aplicativo tamb&eacute;m pergunta quantas pessoas desejam entrar. Afinal, se a porta do elevador est&aacute; aberta no andar, sempre existe essa possibilidade. E ent&atilde;o, se algu&eacute;m decidir entrar, o painel interno se abrir&aacute; novamente. Digamos que as 2 pessoas sa&iacute;ram e 1 pessoa entrou, escolhendo o andar 14 no painel:</span></span></p>
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Sair2.png"/>
+
+<span style="text-align:right"><img alt="" src="/Images/Sair3.png"/> </span> </p>
+
+<p style="margin-left:40px; text-align:justify">&nbsp;</p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">Quando o elevador chega no andar 14, a pessoa sai e outras 3 pessoas entram. Essas pessoas escolhem no painel os andares 2, 3 e 0.</span></span></p>
+
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Descer1.png"/>
+<span style="text-align:right"><img alt="" src="/Images/Descer2.png"/></span></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">Se ningu&eacute;m chamou o elevador ou selecionou andares mais altos, ele deve come&ccedil;ar a descer. Depois do painel, ele mostra o Menu como de costume, e em seguida ele reconhece que deve parar de subir, mudando o seu status:</span></span></p>
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Descer3.png"/></p>
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Descer4.png"/></p>
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/Descer5.png"/></p>
+<p style="margin-left:40px; text-align:justify">&nbsp;</p>
+
+
+<p style="margin-left:40px; text-align:justify"><em><span style="color:#8e44ad"><span style="font-size:20px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif">6.Outras op&ccedil;&otilde;es do Menu</span></span></span></em></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">&nbsp; &nbsp; &nbsp;At&eacute; agora, s&oacute; usamos a op&ccedil;&atilde;o de chamar o elevador e as outras a&ccedil;&otilde;es foram automatizadas de acordo com as pessoas entrando e saindo do elevador. Por&eacute;m, a qualquer momento deve ser poss&iacute;vel escolher sair no andar atual ou selecionar um outro bot&atilde;o no painel. Portanto, essas op&ccedil;&otilde;es sempre est&atilde;o dispon&iacute;veis no Menu, o qual aparece em todos os andares independentemente das outras a&ccedil;&otilde;es. O usu&aacute;rio tamb&eacute;m pode sempre simular que o elevador foi chamado em qualquer andar, mesmo que ele j&aacute; esteja encaminhado, e esperar que ele se comporte da maneira usual: pare no andar antes do seu destino, caso ele esteja na dire&ccedil;&atilde;o em que o elevador est&aacute; indo. </span></span></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">&nbsp; &nbsp; &nbsp;No nosso exemplo, temos 3 pessoas indo para os andares 2,3 e 0, que atualmente se encontram, digamos, no andar 10. Se algu&eacute;m chamar o elevador no andar 7 teremos uma confirma&ccedil;&atilde;o e o elevador continuar&aacute; descendo, parar&aacute; no andar 7 perguntando quantos desejam entrar, abrindo o painel caso algu&eacute;m entre, e em seguida continuando o seu caminho para os andares 2,3 e 0:</span></span></p>
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/ChamadaDescida1.png"/></p>
+
+<p style="margin-left:40px;text-align:justify"><img alt="" src="/Images/ChamadaDescida2.png"/></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">Digamos que 1 pessoa entrou no andar 7 e essa pessoa selecionou o andar 14, mesmo com o elevador descendo. Assim como em um elevador comum, ele continuar&aacute; indicando que est&aacute; descendo para os andares 2,3 e 0. </span></span></p>
+
+<p style="margin-left:40px; text-align:justify"><img alt="" src="/Images/ChamadaDescida3.png"/>
+<span style="text-align:right"><img alt="" src="/Images/ChamadaDescida4.png"/></span></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">Quando n&atilde;o houver outros andares para parar abaixo, o elevador subir&aacute; para o andar 14. Se essa pessoa perceber que se enganou, achando que o elevador estava subindo, ela pode escolher &quot;3&quot; - sair no andar atual ou &quot;2&quot; selecionar algum outro andar no painel para sair.</span></span></p>
+
+<p style="margin-left:40px; text-align:justify"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="font-size:16px">&nbsp; &nbsp; &nbsp;A op&ccedil;&atilde;o &quot;4&quot; do Menu serve para reiniciar o aplicativo. Ao escolher essa op&ccedil;&atilde;o, a tela de inicializa&ccedil;&atilde;o aparecer&aacute; novamente perguntando quantos andares o elevador possui e qual a sua capacidade. As a&ccedil;&otilde;es anteriores ser&atilde;o esquecidas e um novo elevador ser&aacute; inicializado com o valores fornecidos. Finalmente, a op&ccedil;&atilde;o &quot;5&quot; encerra o programa console.</span></span></p>
